@@ -1367,6 +1367,14 @@
               "description": "",
               "icon": "https://www.google.com/s2/favicons?sz=128&domain=cfsz.yormb.cn",
               "enabled": true
+            },
+            {
+              "id": "site_1776859381784_kj183mju9",
+              "title": "NodeWarden",
+              "href": "https://key.yormb.cn/",
+              "description": "",
+              "icon": "/assets/favicon_1776859373878.ico",
+              "enabled": true
             }
           ],
           "enabled": true
