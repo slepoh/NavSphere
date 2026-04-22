@@ -402,16 +402,7 @@
       "icon": "Briefcase",
       "description": "",
       "enabled": true,
-      "items": [
-        {
-          "id": "site_1776857649316_i9bwrzj9l",
-          "title": "工业撕碎机专家 | 高效撕碎解决方案",
-          "href": "https://sisuiji.jxxss.cn/",
-          "description": "提供各种型号粉碎机，适用于木材、金属、塑料、纸箱等材料，厂家直销，电话13223066292",
-          "icon": "https://sisuiji.jxxss.cn/favicon.ico",
-          "enabled": true
-        }
-      ],
+      "items": [],
       "subCategories": [
         {
           "id": "ff39db81-5847-465c-9ce4-9850eb328667",
@@ -426,6 +417,14 @@
               "href": "https://zaoliji.jxxss.cn/",
               "description": "提供各种型号颗粒机，适用于木材、果壳、塑料、纸箱等材料，厂家直销，电话13223066292",
               "icon": "https://zaoliji.jxxss.cn/favicon.ico",
+              "enabled": true
+            },
+            {
+              "id": "site_1776857649316_i9bwrzj9l",
+              "title": "工业撕碎机专家 | 高效撕碎解决方案",
+              "href": "https://sisuiji.jxxss.cn/",
+              "description": "提供各种型号粉碎机，适用于木材、金属、塑料、纸箱等材料，厂家直销，电话13223066292",
+              "icon": "https://sisuiji.jxxss.cn/favicon.ico",
               "enabled": true
             }
           ]
