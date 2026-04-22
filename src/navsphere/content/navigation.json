@@ -256,6 +256,14 @@
               "href": "https://aistudio.google.com/prompts/new_chat",
               "description": "Google AI Studio",
               "icon": "/assets/favicon_1764762488719.webp"
+            },
+            {
+              "id": "site_1776859103735_i14301fkq",
+              "title": "Ai聚合",
+              "href": "https://chat.yormb.cn/",
+              "description": "",
+              "icon": "https://chat.yormb.cn/public/favicon.svg",
+              "enabled": true
             }
           ]
         },
