@@ -436,7 +436,16 @@
           "enabled": true
         }
       ],
-      "subCategories": []
+      "subCategories": [
+        {
+          "id": "ff39db81-5847-465c-9ce4-9850eb328667",
+          "title": "国内",
+          "icon": "Star",
+          "description": "国内站点",
+          "enabled": true,
+          "items": []
+        }
+      ]
     },
     {
       "id": "1735265493940",
