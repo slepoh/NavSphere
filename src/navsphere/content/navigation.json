@@ -1025,6 +1025,14 @@
               "description": "小红书创作中心",
               "icon": "/assets/img_1736912766835.webp",
               "enabled": true
+            },
+            {
+              "id": "site_1776859301848_34yspdbvd",
+              "title": "在线直播源",
+              "href": "https://mglive.yormb.cn/",
+              "description": "",
+              "icon": "https://www.google.com/s2/favicons?sz=128&domain=mglive.yormb.cn",
+              "enabled": true
             }
           ]
         },
