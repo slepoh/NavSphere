@@ -1640,6 +1640,14 @@
               "description": "使用电子礼薄可以直接生成pdf文件，方便存储。",
               "icon": "/assets/favicon_1776858608433.ico",
               "enabled": true
+            },
+            {
+              "id": "site_1776858761383_3h4y9fkjo",
+              "title": "Cf",
+              "href": "https://cf.jxxss.cn/",
+              "description": "访问 cf.jxxss.cn",
+              "icon": "https://www.google.com/s2/favicons?sz=128&domain=cf.jxxss.cn",
+              "enabled": true
             }
           ]
         }
