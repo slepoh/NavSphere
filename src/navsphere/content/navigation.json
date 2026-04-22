@@ -1311,6 +1311,14 @@
               "description": "一款专业的公众号Markdown编辑器，支持实时预览、精美排版模板、一键导出到公众号。WeChat Official Account Markdown Editor.",
               "icon": "/assets/favicon_1776858874652.svg",
               "enabled": true
+            },
+            {
+              "id": "site_1776858929009_20t53z0yq",
+              "title": "在线文生图服务 - 运营程序猿",
+              "href": "https://ai.xingyang.ren/",
+              "description": "",
+              "icon": "/assets/favicon_1776858920331.ico",
+              "enabled": true
             }
           ],
           "enabled": true
