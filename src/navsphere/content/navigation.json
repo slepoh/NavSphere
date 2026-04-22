@@ -410,14 +410,6 @@
           "description": "提供各种型号粉碎机，适用于木材、金属、塑料、纸箱等材料，厂家直销，电话13223066292",
           "icon": "https://sisuiji.jxxss.cn/favicon.ico",
           "enabled": true
-        },
-        {
-          "id": "site_1776857670330_a23pxmu1w",
-          "title": "造粒机专家 | 塑料造粒机、饲料造粒机、有机肥造粒机、生物质造粒机",
-          "href": "https://zaoliji.jxxss.cn/",
-          "description": "提供各种型号颗粒机，适用于木材、果壳、塑料、纸箱等材料，厂家直销，电话13223066292",
-          "icon": "https://zaoliji.jxxss.cn/favicon.ico",
-          "enabled": true
         }
       ],
       "subCategories": [
@@ -427,7 +419,16 @@
           "icon": "Star",
           "description": "国内站点",
           "enabled": true,
-          "items": []
+          "items": [
+            {
+              "id": "site_1776857670330_a23pxmu1w",
+              "title": "造粒机专家 | 塑料造粒机、饲料造粒机、有机肥造粒机、生物质造粒机",
+              "href": "https://zaoliji.jxxss.cn/",
+              "description": "提供各种型号颗粒机，适用于木材、果壳、塑料、纸箱等材料，厂家直销，电话13223066292",
+              "icon": "https://zaoliji.jxxss.cn/favicon.ico",
+              "enabled": true
+            }
+          ]
         },
         {
           "id": "2ade449d-a20c-43ed-935f-4ea9aa2f7e15",
