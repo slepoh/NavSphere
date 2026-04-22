@@ -1672,6 +1672,14 @@
               "description": "访问 cf.jxxss.cn",
               "icon": "https://www.google.com/s2/favicons?sz=128&domain=cf.jxxss.cn",
               "enabled": true
+            },
+            {
+              "id": "site_1776859021523_wxbgef6l3",
+              "title": "地方卫视频道代理 - 高清直播流",
+              "href": "https://live.yormb.cn/",
+              "description": "",
+              "icon": "https://www.google.com/s2/favicons?sz=128&domain=live.yormb.cn",
+              "enabled": true
             }
           ]
         }
