@@ -1303,6 +1303,14 @@
               "description": "",
               "icon": "https://www.google.com/s2/favicons?sz=128&domain=pan.yormb.cn",
               "enabled": true
+            },
+            {
+              "id": "site_1776858881159_1mchl49sn",
+              "title": "Markdown Editor - 专业的公众号Markdown编辑器",
+              "href": "https://md.yormb.cn/",
+              "description": "一款专业的公众号Markdown编辑器，支持实时预览、精美排版模板、一键导出到公众号。WeChat Official Account Markdown Editor.",
+              "icon": "/assets/favicon_1776858874652.svg",
+              "enabled": true
             }
           ],
           "enabled": true
