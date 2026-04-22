@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="favicon.ico" />
+    <title>造粒机专家 | 塑料造粒机、饲料造粒机、有机肥造粒机、生物质造粒机</title>
+	<meta name="keywords" content="造粒机,颗粒机,饲料颗粒机,生物质颗粒机,颗粒机厂家,塑料颗粒机,造粒机厂家">
+    <meta name="description" content="提供各种型号颗粒机，适用于木材、果壳、塑料、纸箱等材料，厂家直销，电话13223066292">
+    <meta name="author" content="颗粒机厂家">
+	<meta property="og:type" content="website" />
+    <meta property="og:title" content="工业颗粒机专家 | 高效造粒解决方案" />
+    <meta property="og:url" content='https://zaoliji.jxxss.cn' />
+    <meta property="og:image" content="https://zaoliji.jxxss.cn/logo.webp" />
+    <meta property="og:description" content="提供各种型号颗粒机，适用于木材、果壳、塑料、纸箱等材料，厂家直销，电话13223066292" />
+    <meta property="og:site_name" content="工业颗粒机专家 | 高效造粒解决方案" />
+    <meta name="twitter:card" content="https://zaoliji.jxxss.cn/logo.webp" />
+    <meta name="twitter:site" content="@slepoh" />
+    <meta name="twitter:title" content="工业颗粒机专家 | 高效造粒解决方案" />
+    <meta name="twitter:description" content="提供各种型号颗粒机，适用于木材、果壳、塑料、纸箱等材料，厂家直销，电话13223066292" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary-color: #0e7490;
+            --secondary-color: #10b981;
+            --accent-color: #f59e0b;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(14, 116, 144, 0.9), rgba(14, 116, 144, 0.9)), 
+                        url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .modal-content {
+            transform: translateY(50px);
+            transition: transform 0.3s ease;
+        }
+        
+        .modal-overlay.active .modal-content {
+            transform: translateY(0);
+        }
+        
+        .product-card {
+            transition: all 0.3s ease;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .feature-icon {
+            background-color: #f0f9ff;
+            color: var(--primary-color);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0c5d75;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background-color: var(--secondary-color);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #0da271;
+            transform: translateY(-2px);
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+            }
+        }
+        
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            transition: all 0.3s ease;
+        }
+        
+        .sticky-nav.scrolled {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 4px;
+            background-color: var(--primary-color);
+            bottom: -10px;
+            left: 20%;
+            border-radius: 2px;
+        }
+        
+        .process-step {
+            position: relative;
+        }
+        
+        .process-step:not(:last-child):after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 60px;
+            background-color: #d1d5db;
+            bottom: -70px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        @media (max-width: 768px) {
+            .process-step:not(:last-child):after {
+                display: none;
+            }
+        }
+        
+        .stats-card {
+            background: linear-gradient(135deg, #0e7490, #0c5d75);
+            color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-card {
+            border-left: 4px solid var(--primary-color);
+            background-color: #f9fafb;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- 询盘弹窗 -->
+    <div id="inquiryModal" class="modal-overlay">
+        <div class="modal-content bg-white rounded-xl w-11/12 md:w-1/2 lg:w-1/3 mx-auto p-6 shadow-2xl">
+            <div class="flex justify-between items-center mb-6">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">免费获取报价</h3>
+                    <p class="text-gray-600 text-sm mt-1">填写信息，我们将在15分钟内联系您</p>
+                </div>
+                <button id="closeModal" class="text-gray-500 hover:text-gray-800 text-2xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <form id="inquiryForm" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">姓名 *</label>
+                    <input type="text" id="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-600 focus:border-cyan-500 outline-none transition">
+                </div>
+                
+                <div>
+                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">联系电话 *</label>
+                    <input type="tel" id="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-600 focus:border-cyan-500 outline-none transition">
+                </div>
+                
+                <div>
+                    <label for="company" class="block text-sm font-medium text-gray-700 mb-1">公司名称</label>
+                    <input type="text" id="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-600 focus:border-cyan-500 outline-none transition">
+                </div>
+                
+                <div>
+                    <label for="machineType" class="block text-sm font-medium text-gray-700 mb-1">设备类型 *</label>
+                    <select id="machineType" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-600 focus:border-cyan-500 outline-none transition">
+                        <option value="">请选择造粒机类型</option>
+                        <option value="plastic">塑料造粒机</option>
+                        <option value="feed">饲料造粒机</option>
+                        <option value="fertilizer">有机肥造粒机</option>
+                        <option value="chemical">生物质造粒机</option>
+                        <option value="other">其他类型</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="capacity" class="block text-sm font-medium text-gray-700 mb-1">预期产能 (kg/h)</label>
+                    <select id="capacity" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-600 focus:border-cyan-500 outline-none transition">
+                        <option value="">请选择预期产能</option>
+                        <option value="100-500">100-500 kg/h</option>
+                        <option value="500-1000">500-1000 kg/h</option>
+                        <option value="1000-2000">1000-2000 kg/h</option>
+                        <option value="2000+">2000+ kg/h</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">具体要求</label>
+                    <textarea id="message" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-600 focus:border-cyan-500 outline-none transition" placeholder="请描述您的具体需求..."></textarea>
+                </div>
+                
+                <div class="pt-2">
+                    <button type="submit" class="w-full py-3 bg-cyan-700 hover:bg-cyan-800 text-white font-semibold rounded-lg transition duration-300 flex items-center justify-center">
+                        <i class="fas fa-paper-plane mr-2"></i> 立即获取报价
+                    </button>
+                </div>
+                
+                <p class="text-xs text-gray-500 text-center">提交后我们的技术顾问会立即联系您</p>
+            </form>
+        </div>
+    </div>
+    
+    <!-- 顶部联系栏 -->
+    <div class="bg-gray-900 text-white py-3 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-6 mb-2 md:mb-0">
+                <div class="flex items-center">
+                    <i class="fas fa-phone-alt text-emerald-400 mr-2"></i>
+                    <span class="font-semibold">销售热线：</span>
+                    <a href="tel:13223066292" class="ml-2 text-emerald-400 font-bold text-lg hover:underline">13223066292</a>
+                </div>
+                <div class="hidden md:flex items-center">
+                    <i class="fas fa-envelope text-emerald-400 mr-2"></i>
+                    <span>邮箱：</span>
+                    <a href="/cdn-cgi/l/email-protection#4a39262f3a25220a3b3b64292527" class="ml-2 hover:underline"><span class="__cf_email__" data-cfemail="02716e67726d6a4273732c616d6f">[email&#160;protected]</span></a>
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <button id="openInquiryBtn" class="bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-4 rounded-lg flex items-center pulse">
+                    <i class="fas fa-bolt mr-2"></i> 免费咨询
+                </button>
+                <div class="hidden md:flex items-center">
+                    <i class="fas fa-clock text-emerald-400 mr-2"></i>
+                    <span>工作时间：8:00-20:00（全年无休）</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 导航栏 -->
+    <nav class="sticky-nav bg-white py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-12 h-12 bg-cyan-700 rounded-lg flex items-center justify-center mr-3">
+                    <iconify-icon icon="mdi:factory" class="text-white text-2xl"></iconify-icon>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold text-cyan-900">造粒机专家</h1>
+                    <p class="text-sm text-gray-600">专业造粒设备制造商</p>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-cyan-700 font-medium">首页</a>
+                <a href="#about" class="text-gray-700 hover:text-cyan-700 font-medium">关于我们</a>
+                <a href="#products" class="text-gray-700 hover:text-cyan-700 font-medium">产品中心</a>
+                <a href="#process" class="text-gray-700 hover:text-cyan-700 font-medium">工艺流程</a>
+                <a href="#cases" class="text-gray-700 hover:text-cyan-700 font-medium">成功案例</a>
+                <a href="#contact" class="text-gray-700 hover:text-cyan-700 font-medium">联系我们</a>
+            </div>
+            
+            <button class="md:hidden text-gray-700 text-2xl" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- 移动端菜单 -->
+        <div class="md:hidden bg-white border-t mt-4 py-4 hidden" id="mobileMenu">
+            <div class="container mx-auto px-4 flex flex-col space-y-4">
+                <a href="#home" class="text-gray-700 hover:text-cyan-700 font-medium py-2">首页</a>
+                <a href="#about" class="text-gray-700 hover:text-cyan-700 font-medium py-2">关于我们</a>
+                <a href="#products" class="text-gray-700 hover:text-cyan-700 font-medium py-2">产品中心</a>
+                <a href="#process" class="text-gray-700 hover:text-cyan-700 font-medium py-2">工艺流程</a>
+                <a href="#cases" class="text-gray-700 hover:text-cyan-700 font-medium py-2">成功案例</a>
+                <a href="#contact" class="text-gray-700 hover:text-cyan-700 font-medium py-2">联系我们</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- 首页横幅 -->
+    <section id="home" class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl">
+                <h2 class="text-4xl md:text-6xl font-bold mb-6">专业造粒机设备制造商</h2>
+                <p class="text-xl mb-8 text-cyan-100">专注造粒设备20年，提供塑料、饲料、有机肥、化工等领域全套造粒解决方案</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <button id="openInquiryBtn2" class="btn-primary py-4 px-8 rounded-lg font-semibold text-lg flex items-center justify-center">
+                        <i class="fas fa-file-invoice-dollar mr-3"></i> 免费获取报价
+                    </button>
+                    <a href="tel:13223066292" class="btn-secondary py-4 px-8 rounded-lg font-semibold text-lg flex items-center justify-center">
+                        <i class="fas fa-phone-alt mr-3"></i> 13223066292
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 公司简介 -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4 section-title">关于我们</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">20年专注造粒设备研发制造，为客户提供高效、节能、耐用的造粒解决方案</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-6">造粒设备行业领导者</h3>
+                    <p class="text-gray-700 mb-6">我们是一家专业从事造粒机研发、制造、销售和服务的高新技术企业。自2003年成立以来，始终专注于造粒技术的创新与发展，为全球客户提供高品质的造粒设备和全面的解决方案。</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-cyan-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-award text-cyan-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-900 mb-1">20年行业经验</h4>
+                                <p class="text-gray-600">20年专注造粒设备研发制造，技术积累深厚</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-cyan-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-users text-cyan-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-900 mb-1">3000+客户信赖</h4>
+                                <p class="text-gray-600">服务超过3000家客户，产品远销全球30多个国家</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-cyan-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-shield-alt text-cyan-700"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-900 mb-1">完善售后服务</h4>
+                                <p class="text-gray-600">24小时技术支持，48小时上门服务，终身维护</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-gray-200 h-80 rounded-xl overflow-hidden">
+                        <div class="w-full h-full flex items-center justify-center bg-gradient-to-r from-cyan-500 to-cyan-700">
+                            <iconify-icon icon="mdi:factory" class="text-white text-8xl"></iconify-icon>
+                        </div>
+                    </div>
+                    
+                    <!-- 统计数据 -->
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="stats-card text-center">
+                            <div class="text-3xl font-bold mb-2">20+</div>
+                            <div class="text-cyan-100">年行业经验</div>
+                        </div>
+                        <div class="stats-card text-center">
+                            <div class="text-3xl font-bold mb-2">3000+</div>
+                            <div class="text-cyan-100">服务客户</div>
+                        </div>
+                        <div class="stats-card text-center">
+                            <div class="text-3xl font-bold mb-2">50+</div>
+                            <div class="text-cyan-100">专利技术</div>
+                        </div>
+                        <div class="stats-card text-center">
+                            <div class="text-3xl font-bold mb-2">30+</div>
+                            <div class="text-cyan-100">国家地区</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 产品中心 -->
+    <section id="products" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4 section-title">产品中心</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">多种类型造粒机满足不同行业需求，提供定制化解决方案</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 产品1 -->
+                <div class="product-card bg-white rounded-xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-cyan-500 to-cyan-700 flex items-center justify-center">
+                        <iconify-icon icon="mdi:recycle" class="text-white text-8xl"></iconify-icon>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-gray-900">生物质造粒机</h3>
+                            <span class="bg-cyan-100 text-cyan-800 text-sm font-semibold px-3 py-1 rounded-full">热销</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">适用于木材、秸秆、玉米芯、旧衣服等材料回收造粒，高效节能，颗粒均匀。</p>
+                        
+                        <div class="space-y-3 mb-6">
+                            <div class="flex justify-between">
+                                <span class="text-gray-700">产能范围</span>
+                                <span class="font-semibold">100-2000kg/h</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-700">功率范围</span>
+                                <span class="font-semibold">15-160kW</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-700">颗粒直径</span>
+                                <span class="font-semibold">2-8mm可调</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex space-x-4">
+                            <button class="open-product-modal flex-1 py-3 bg-cyan-700 hover:bg-cyan-800 text-white font-semibold rounded-lg transition" data-product="生物质造粒机">
+                                立即咨询
+                            </button>
+                            <a href="#" class="w-12 h-12 border border-cyan-700 text-cyan-700 rounded-lg flex items-center justify-center hover:bg-cyan-50 transition">
+                                <i class="fas fa-info"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 产品2 -->
+                <div class="product-card bg-white rounded-xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-emerald-500 to-emerald-700 flex items-center justify-center">
+                        <iconify-icon icon="mdi:corn" class="text-white text-8xl"></iconify-icon>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-gray-900">饲料造粒机</h3>
+                            <span class="bg-emerald-100 text-emerald-800 text-sm font-semibold px-3 py-1 rounded-full">新品</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">用于禽畜饲料、水产饲料、宠物饲料等制粒，颗粒紧实，熟化度高。</p>
+                        
+                        <div class="space-y-3 mb-6">
+                            <div class="flex justify-between">
+                                <span class="text-gray-700">产能范围</span>
+                                <span class="font-semibold">200-5000kg/h</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-700">功率范围</span>
+                                <span class="font-semibold">22-250kW</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-700">颗粒直径</span>
+                                <span class="font-semibold">1.5-12mm可调</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex space-x-4">
+                            <button class="open-product-modal flex-1 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-lg transition" data-product="饲料造粒机">
+                                立即咨询
+                            </button>
+                            <a href="#" class="w-12 h-12 border border-emerald-600 text-emerald-600 rounded-lg flex items-center justify-center hover:bg-emerald-50 transition">
+                                <i class="fas fa-info"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 产品3 -->
+                <div class="product-card bg-white rounded-xl overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-amber-500 to-amber-700 flex items-center justify-center">
+                        <iconify-icon icon="mdi:leaf" class="text-white text-8xl"></iconify-icon>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-gray-900">有机肥造粒机</h3>
+                            <span class="bg-amber-100 text-amber-800 text-sm font-semibold px-3 py-1 rounded-full">环保</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">适用于畜禽粪便、污泥、秸秆等有机废弃物制粒，环保高效。</p>
+                        
+                        <div class="space-y-3 mb-6">
+                            <div class="flex justify-between">
+                                <span class="text-gray-700">产能范围</span>
+                                <span class="font-semibold">500-10000kg/h</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-700">功率范围</span>
+                                <span class="font-semibold">30-300kW</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-700">颗粒直径</span>
+                                <span class="font-semibold">3-10mm可调</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex space-x-4">
+                            <button class="open-product-modal flex-1 py-3 bg-amber-600 hover:bg-amber-700 text-white font-semibold rounded-lg transition" data-product="有机肥造粒机">
+                                立即咨询
+                            </button>
+                            <a href="#" class="w-12 h-12 border border-amber-600 text-amber-600 rounded-lg flex items-center justify-center hover:bg-amber-50 transition">
+                                <i class="fas fa-info"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button id="viewAllProducts" class="px-8 py-3 border-2 border-cyan-700 text-cyan-700 font-semibold rounded-lg hover:bg-cyan-50 transition">
+                    查看所有产品
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 工艺流程 -->
+    <section id="process" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4 section-title">造粒工艺流程</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">从原料到成品，我们提供完整的造粒生产线解决方案</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- 步骤1 -->
+                <div class="process-step text-center">
+                    <div class="w-20 h-20 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <div class="w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">1</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">原料破碎</h3>
+                    <p class="text-gray-600">将原料进行粗破碎，确保粒度均匀，便于后续处理。</p>
+                </div>
+                
+                <!-- 步骤2 -->
+                <div class="process-step text-center">
+                    <div class="w-20 h-20 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <div class="w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">2</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">混合搅拌</h3>
+                    <p class="text-gray-600">按配方混合原料，加入必要添加剂，确保成分均匀。</p>
+                </div>
+                
+                <!-- 步骤3 -->
+                <div class="process-step text-center">
+                    <div class="w-20 h-20 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <div class="w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">3</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">造粒成型</h3>
+                    <p class="text-gray-600">通过挤压、切割、冷却等工艺，形成均匀颗粒。</p>
+                </div>
+                
+                <!-- 步骤4 -->
+                <div class="process-step text-center">
+                    <div class="w-20 h-20 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <div class="w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">4</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">筛分包装</h3>
+                    <p class="text-gray-600">筛分合格颗粒，自动计量包装，确保成品质量。</p>
+                </div>
+            </div>
+            
+            <!-- 生产线示意图 -->
+            <div class="mt-16 bg-gradient-to-r from-cyan-50 to-gray-50 rounded-xl p-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">造粒生产线示意图</h3>
+                <div class="relative h-64 bg-white rounded-lg border-2 border-dashed border-cyan-200 flex items-center justify-center">
+                    <div class="text-center text-gray-500">
+                        <iconify-icon icon="mdi:factory" class="text-6xl text-cyan-300 mb-4"></iconify-icon>
+                        <p>造粒生产线示意图</p>
+                        <p class="text-sm">(实际生产线根据客户需求定制)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 成功案例 -->
+    <section id="cases" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4 section-title">解决方案</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">我们的造粒设备已广泛应用于多个行业，获得客户一致好评</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 案例1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-cyan-100 to-cyan-300 flex items-center justify-center">
+                        <iconify-icon icon="mdi:recycle" class="text-cyan-700 text-8xl"></iconify-icon>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">塑料公司</h3>
+                            <span class="text-sm bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full">塑料造粒</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">采购我司塑料造粒生产线2条，日处理废塑料15吨，年产值增加2000万元。</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>浙江 · 宁波</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 案例2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-emerald-100 to-emerald-300 flex items-center justify-center">
+                        <iconify-icon icon="mdi:cow" class="text-emerald-700 text-8xl"></iconify-icon>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">饲料集团</h3>
+                            <span class="text-sm bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full">饲料造粒</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">引进我司饲料造粒生产线，产能提升40%，能耗降低25%，年节约成本300万元。</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>山东 · 临沂</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 案例3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-amber-100 to-amber-300 flex items-center justify-center">
+                        <iconify-icon icon="mdi:leaf" class="text-amber-700 text-8xl"></iconify-icon>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold text-gray-900">有机肥厂</h3>
+                            <span class="text-sm bg-amber-100 text-amber-800 px-3 py-1 rounded-full">有机肥造粒</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">采用我司有机肥造粒设备，年处理畜禽粪便10万吨，生产有机肥3万吨，实现环保与经济效益双赢。</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>内蒙 · 包头</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 客户评价 -->
+            <div class="mt-16">
+                <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">客户评价</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="testimonial-card p-6 rounded-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-user text-cyan-700 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">张总 | 塑料回收公司</h4>
+                                <div class="flex text-amber-500">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic">"使用贵公司的塑料造粒机已经3年了，设备运行稳定，产量高，能耗低。售后服务非常及时，有问题24小时内就能解决，是我们可靠的合作伙伴。"</p>
+                    </div>
+                    
+                    <div class="testimonial-card p-6 rounded-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-user text-cyan-700 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">李经理 | 饲料加工厂</h4>
+                                <div class="flex text-amber-500">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic">"从设备安装到调试，再到生产，技术人员全程指导，服务非常专业。设备投产后，颗粒质量稳定，熟化度高，牲畜适口性好，产量比预期高出15%。"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 联系我们 -->
+    <section id="contact" class="py-16 bg-cyan-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">联系我们</h2>
+                <p class="text-xl text-cyan-200 max-w-3xl mx-auto">欢迎随时联系我们，获取专业的造粒机解决方案与报价</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div>
+                    <h3 class="text-2xl font-bold mb-6">公司信息</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-cyan-800 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold mb-1">公司地址</h4>
+                                <p class="text-cyan-200">河南省郑州市荥阳工业园区</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-cyan-800 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-phone-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold mb-1">销售热线</h4>
+                                <p class="text-2xl font-bold text-emerald-300">13223066292</p>
+                                <p class="text-cyan-200 mt-1">周一至周日 8:00-20:00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-cyan-800 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold mb-1">邮箱地址</h4>
+                                <p class="text-cyan-200"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2d5e41485d42456d5c5c034e4240">[email&#160;protected]</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-cyan-800 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-clock text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold mb-1">服务承诺</h4>
+                                <p class="text-cyan-200">24小时技术咨询，48小时上门服务，终身维护，免费安装调试</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">立即咨询</h3>
+                    <form id="contactForm" class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <input type="text" placeholder="您的姓名" class="w-full px-4 py-3 rounded-lg bg-cyan-800 border border-cyan-700 text-white placeholder-cyan-300 focus:outline-none focus:ring-2 focus:ring-emerald-400" required>
+                            </div>
+                            <div>
+                                <input type="tel" placeholder="联系电话" class="w-full px-4 py-3 rounded-lg bg-cyan-800 border border-cyan-700 text-white placeholder-cyan-300 focus:outline-none focus:ring-2 focus:ring-emerald-400" required>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <input type="email" placeholder="电子邮箱" class="w-full px-4 py-3 rounded-lg bg-cyan-800 border border-cyan-700 text-white placeholder-cyan-300 focus:outline-none focus:ring-2 focus:ring-emerald-400">
+                        </div>
+                        
+                        <div>
+                            <select class="w-full px-4 py-3 rounded-lg bg-cyan-800 border border-cyan-700 text-white placeholder-cyan-300 focus:outline-none focus:ring-2 focus:ring-emerald-400" required>
+                                <option value="">选择设备类型</option>
+                                <option value="plastic">塑料造粒机</option>
+                                <option value="feed">饲料造粒机</option>
+                                <option value="fertilizer">有机肥造粒机</option>
+                                <option value="chemical">生物质造粒机</option>
+                                <option value="other">其他设备</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <textarea rows="4" placeholder="您的具体需求（如处理物料、产能要求等）" class="w-full px-4 py-3 rounded-lg bg-cyan-800 border border-cyan-700 text-white placeholder-cyan-300 focus:outline-none focus:ring-2 focus:ring-emerald-400" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-lg transition duration-300">
+                            提交需求
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 页脚 -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-cyan-700 rounded-lg flex items-center justify-center mr-3">
+                            <iconify-icon icon="mdi:factory" class="text-white"></iconify-icon>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-bold">造粒机专家</h2>
+                            <p class="text-sm text-gray-400">专业造粒设备制造商</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400 mb-2">© 2026 造粒机厂家 版权所有</p>
+                    <p class="text-sm text-gray-500">专业生产销售各种型号颗粒机</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- 浮动联系按钮 -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col space-y-4">
+        <a href="tel:13223066292" class="w-14 h-14 bg-emerald-600 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-emerald-700 transition pulse">
+            <i class="fas fa-phone-alt text-xl"></i>
+        </a>
+        <button id="floatingInquiryBtn" class="w-14 h-14 bg-cyan-700 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-cyan-800 transition">
+            <i class="fas fa-comment-alt text-xl"></i>
+        </button>
+    </div>
+    
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 获取弹窗和按钮元素
+            const modal = document.getElementById('inquiryModal');
+            const openInquiryBtn = document.getElementById('openInquiryBtn');
+            const openInquiryBtn2 = document.getElementById('openInquiryBtn2');
+            const floatingInquiryBtn = document.getElementById('floatingInquiryBtn');
+            const closeModalBtn = document.getElementById('closeModal');
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const viewAllProductsBtn = document.getElementById('viewAllProducts');
+            const inquiryForm = document.getElementById('inquiryForm');
+            const productModalButtons = document.querySelectorAll('.open-product-modal');
+            
+            // 打开弹窗的函数
+            function openModal() {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+            
+            // 关闭弹窗的函数
+            function closeModal() {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+            
+            // 绑定打开弹窗事件
+            openInquiryBtn.addEventListener('click', openModal);
+            openInquiryBtn2.addEventListener('click', openModal);
+            floatingInquiryBtn.addEventListener('click', openModal);
+            
+            // 绑定关闭弹窗事件
+            closeModalBtn.addEventListener('click', closeModal);
+            
+            // 点击弹窗外部关闭弹窗
+            modal.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    closeModal();
+                }
+            });
+            
+            // 移动端菜单切换
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // 产品详情按钮点击事件
+            productModalButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const productName = this.getAttribute('data-product');
+                    // 设置设备类型到表单
+                    const machineTypeSelect = document.getElementById('machineType');
+                    
+                    if (productName === "塑料造粒机") {
+                        machineTypeSelect.value = "plastic";
+                    } else if (productName === "饲料造粒机") {
+                        machineTypeSelect.value = "feed";
+                    } else if (productName === "有机肥造粒机") {
+                        machineTypeSelect.value = "fertilizer";
+                    } else {
+                        machineTypeSelect.value = "other";
+                    }
+                    
+                    // 在消息字段中预填产品信息
+                    const messageField = document.getElementById('message');
+                    messageField.value = `我对${productName}感兴趣，请提供详细资料和报价。\n\n`;
+                    
+                    // 打开弹窗
+                    openModal();
+                    
+                    // 滚动到表单
+                    setTimeout(() => {
+                        document.getElementById('name').focus();
+                    }, 300);
+                });
+            });
+            
+            // 查看所有产品按钮
+            viewAllProductsBtn.addEventListener('click', function() {
+                openModal();
+            });
+            
+            // 表单提交处理
+            inquiryForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                
+                // 获取表单数据
+                const formData = {
+                    name: document.getElementById('name').value,
+                    phone: document.getElementById('phone').value,
+                    company: document.getElementById('company').value,
+                    machineType: document.getElementById('machineType').value,
+                    capacity: document.getElementById('capacity').value,
+                    message: document.getElementById('message').value
+                };
+                
+                // 这里应该发送到服务器
+                console.log('询盘表单数据:', formData);
+                
+                // 显示成功消息
+                alert('感谢您的咨询！我们的技术顾问将在15分钟内联系您。');
+                
+                // 关闭弹窗
+                closeModal();
+                
+                // 重置表单
+                inquiryForm.reset();
+                
+                // 设置标记，避免重复弹出
+                localStorage.setItem('granulatorInquirySubmitted', 'true');
+            });
+            
+            // 联系表单提交
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('您的需求已提交，我们将尽快与您联系！');
+                this.reset();
+            });
+            
+            // 页面加载后自动打开弹窗（延迟5秒）
+            setTimeout(function() {
+                // 检查是否已提交过表单
+                const hasSubmitted = localStorage.getItem('granulatorInquirySubmitted');
+                if (!hasSubmitted) {
+                    openModal();
+                }
+            }, 5000);
+            
+            // 导航栏滚动效果
+            const nav = document.querySelector('.sticky-nav');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+            
+            // 平滑滚动到锚点
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    // 移动端菜单点击后关闭菜单
+                    if (window.innerWidth < 768) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        e.preventDefault();
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // 关闭移动端菜单当点击外部
+            document.addEventListener('click', function(event) {
+                if (!mobileMenu.contains(event.target) && !mobileMenuBtn.contains(event.target) && !mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+	<script src="https://registry.npmmirror.com/page-agent/1.7.1/files/dist/iife/page-agent.demo.js" crossorigin="true"></script>
+</body>
+</html>
