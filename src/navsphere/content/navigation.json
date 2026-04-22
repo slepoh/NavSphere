@@ -881,6 +881,14 @@
               "description": "Self-hosting platform with superpowers. Deploy apps, databases &#38; 280+ services to your server. Open-source alternative to Heroku.",
               "icon": "/assets/favicon_1761279686786.webp",
               "enabled": true
+            },
+            {
+              "id": "site_1776859564575_dgrpw666x",
+              "title": "Docker Hub 镜像搜索",
+              "href": "https://docker.yormb.cn/",
+              "description": "",
+              "icon": "https://www.google.com/s2/favicons?sz=128&domain=docker.yormb.cn",
+              "enabled": true
             }
           ]
         },
