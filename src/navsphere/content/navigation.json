@@ -1287,6 +1287,14 @@
               "description": "安全、快速、一次性的临时邮箱地址，保护您的隐私，远离垃圾邮件。支持邮箱分享、即时收件，到期自动失效。提供完整的 OpenAPI 接口，方便开发者集成和自动化测试。",
               "icon": "/assets/favicon_1776858499777.ico",
               "enabled": true
+            },
+            {
+              "id": "site_1776858723803_7g9bt0a4q",
+              "title": "WXPush — 微信消息推送服务",
+              "href": "https://wxplus.yormb.cn/",
+              "description": "",
+              "icon": "https://www.google.com/s2/favicons?sz=128&domain=wxplus.yormb.cn",
+              "enabled": true
             }
           ],
           "enabled": true
