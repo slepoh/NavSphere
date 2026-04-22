@@ -1335,6 +1335,14 @@
               "description": "",
               "icon": "https://www.google.com/s2/favicons?sz=128&domain=sub.yormb.cn",
               "enabled": true
+            },
+            {
+              "id": "site_1776859217809_nuse6sh5p",
+              "title": "临时邮箱",
+              "href": "https://email.yormb.cn/",
+              "description": "Temp Email",
+              "icon": "/assets/favicon_1776859201603.png",
+              "enabled": true
             }
           ],
           "enabled": true
