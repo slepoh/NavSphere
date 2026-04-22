@@ -1343,6 +1343,14 @@
               "description": "Temp Email",
               "icon": "/assets/favicon_1776859201603.png",
               "enabled": true
+            },
+            {
+              "id": "site_1776859248531_cx0hmn0tc",
+              "title": "数字套利-登录",
+              "href": "https://cfsz.yormb.cn/",
+              "description": "",
+              "icon": "https://www.google.com/s2/favicons?sz=128&domain=cfsz.yormb.cn",
+              "enabled": true
             }
           ],
           "enabled": true
