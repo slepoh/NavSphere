@@ -1375,6 +1375,14 @@
               "description": "",
               "icon": "/assets/favicon_1776859373878.ico",
               "enabled": true
+            },
+            {
+              "id": "site_1776859520950_q5xf1h9d9",
+              "title": "60秒API",
+              "href": "https://60s.yormb.cn/",
+              "description": "",
+              "icon": "https://www.google.com/s2/favicons?sz=128&domain=60s.yormb.cn",
+              "enabled": true
             }
           ],
           "enabled": true
