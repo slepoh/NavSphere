@@ -402,7 +402,16 @@
       "icon": "Briefcase",
       "description": "",
       "enabled": true,
-      "items": [],
+      "items": [
+        {
+          "id": "site_1776857625356_yn9qf0afm",
+          "title": "造粒机",
+          "href": "https://pellet.jxxss.cn/",
+          "description": "Focusing on energy-saving and environmentally friendly pellet processing equipment, it provides a full range of equipment solutions for biomass fuel, animal feed, organic fertilizer molding, etc., and provides customized design and global export services.",
+          "icon": "https://pellet.jxxss.cn/favicon.ico",
+          "enabled": true
+        }
+      ],
       "subCategories": []
     },
     {
