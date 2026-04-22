@@ -1624,6 +1624,14 @@
               "description": "Create book from markdown files. Like Gitbook but implemented in Rust",
               "icon": "/assets/img_1765686772245.webp",
               "enabled": true
+            },
+            {
+              "id": "site_1776858619725_8aouvugi2",
+              "title": "电子礼簿系统 - 专业版",
+              "href": "https://lijin.yormb.cn",
+              "description": "使用电子礼薄可以直接生成pdf文件，方便存储。",
+              "icon": "/assets/favicon_1776858608433.ico",
+              "enabled": true
             }
           ]
         }
