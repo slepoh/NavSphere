@@ -418,14 +418,6 @@
           "description": "提供各种型号颗粒机，适用于木材、果壳、塑料、纸箱等材料，厂家直销，电话13223066292",
           "icon": "https://zaoliji.jxxss.cn/favicon.ico",
           "enabled": true
-        },
-        {
-          "id": "site_1776857701646_1mmjuu9bw",
-          "title": "撕碎机",
-          "href": "https://grinder.jxxss.cn/",
-          "description": "PowerShred - Professional industrial shredder manufacturer. High-quality shredding machines for plastic, metal, wood, and waste recycling.",
-          "icon": "https://grinder.jxxss.cn/assets/images/favicon.ico",
-          "enabled": true
         }
       ],
       "subCategories": [
@@ -450,6 +442,14 @@
               "href": "https://pellet.jxxss.cn/",
               "description": "Focusing on energy-saving and environmentally friendly pellet processing equipment, it provides a full range of equipment solutions for biomass fuel, animal feed, organic fertilizer molding, etc., and provides customized design and global export services.",
               "icon": "https://pellet.jxxss.cn/favicon.ico",
+              "enabled": true
+            },
+            {
+              "id": "site_1776857701646_1mmjuu9bw",
+              "title": "撕碎机",
+              "href": "https://grinder.jxxss.cn/",
+              "description": "PowerShred - Professional industrial shredder manufacturer. High-quality shredding machines for plastic, metal, wood, and waste recycling.",
+              "icon": "https://grinder.jxxss.cn/assets/images/favicon.ico",
               "enabled": true
             }
           ]
