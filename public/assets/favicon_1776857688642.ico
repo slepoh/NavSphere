@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PowerShred - Professional industrial shredder manufacturer. High-quality shredding machines for plastic, metal, wood, and waste recycling.">
+    <meta name="keywords" content="industrial shredder, crusher machine, recycling equipment, plastic shredder, metal crusher, wood chipper">
+    <title>PowerShred | Industrial Shredding Solutions</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0056b3',
+                        secondary: '#f8a31c',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- 自定义CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+</head>
+<body class="font-sans text-gray-800">
+    <!-- 导航栏 -->
+    <nav class="sticky-nav bg-white shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <iconify-icon icon="mdi:factory" style="color: #0056b3; font-size: 32px;"></iconify-icon>
+                    <a href="/" class="ml-3">
+                        <h1 class="text-2xl font-bold text-gray-900">Power<span class="text-blue-700">Shred</span></h1>
+                        <p class="text-xs text-gray-500">Industrial Shredding Solutions</p>
+                    </a>
+                </div>
+                
+                <!-- 桌面导航 -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="/" class="font-semibold text-blue-700 border-b-2 border-blue-700 pb-1">Home</a>
+                    <a href="/about.html" class="font-medium hover:text-blue-700 transition">About</a>
+                    <a href="/products.html" class="font-medium hover:text-blue-700 transition">Products</a>
+                    <a href="/contact.html" class="font-medium hover:text-blue-700 transition">Contact</a>
+                    <div class="flex items-center space-x-4">
+                        <a href="https://wa.me/8613223066292" class="text-green-600 hover:text-green-800" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                        <a href="https://facebook.com" class="text-blue-600 hover:text-blue-800" target="_blank" rel="noopener">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="https://tiktok.com" class="text-gray-800 hover:text-black" target="_blank" rel="noopener">
+                            <i class="fab fa-tiktok text-xl"></i>
+                        </a>
+                        <a href="https://youtube.com" class="text-red-600 hover:text-red-800" target="_blank" rel="noopener">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 移动端菜单按钮 -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-700 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- 移动端菜单 -->
+            <div id="mobile-menu" class="hidden md:hidden py-4 border-t">
+                <div class="flex flex-col space-y-4">
+                    <a href="/" class="font-semibold text-blue-700">Home</a>
+                    <a href="/about.html" class="font-medium hover:text-blue-700">About</a>
+                    <a href="/products.html" class="font-medium hover:text-blue-700">Products</a>
+                    <a href="/contact.html" class="font-medium hover:text-blue-700">Contact</a>
+                    <div class="flex space-x-6 pt-4">
+                        <a href="https://wa.me/8613223066292" class="text-green-600 hover:text-green-800" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp text-2xl"></i>
+                        </a>
+                        <a href="https://facebook.com" class="text-blue-600 hover:text-blue-800" target="_blank" rel="noopener">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="https://tiktok.com" class="text-gray-800 hover:text-black" target="_blank" rel="noopener">
+                            <i class="fab fa-tiktok text-2xl"></i>
+                        </a>
+                        <a href="https://youtube.com" class="text-red-600 hover:text-red-800" target="_blank" rel="noopener">
+                            <i class="fab fa-youtube text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section class="hero-section text-white">
+        <div class="container mx-auto px-4 py-24 md:py-32">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Industrial Shredding Solutions for Every Material</h1>
+                <p class="text-xl mb-8 opacity-90">High-performance shredders and crushers for plastic, metal, wood, and waste recycling. Customized solutions for your business needs.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="/contact.html" class="btn-primary inline-flex items-center justify-center">
+                        <i class="fas fa-file-invoice-dollar mr-2"></i> Request a Quote
+                    </a>
+                    <a href="/products.html" class="btn-secondary inline-flex items-center justify-center">
+                        <i class="fas fa-cogs mr-2"></i> View Products
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务/产品优势 -->
+    <section class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose PowerShred?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We provide industrial shredding equipment that combines durability, efficiency, and innovation for maximum ROI.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 优势1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md product-card text-center">
+                    <div class="w-20 h-20 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-6">
+                        <iconify-icon icon="mdi:robot-industrial" style="color: #0056b3; font-size: 40px;"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Advanced Technology</h3>
+                    <p class="text-gray-600">Our shredders feature the latest cutting technology, IoT monitoring, and energy-efficient motors for optimal performance.</p>
+                </div>
+                
+                <!-- 优势2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md product-card text-center">
+                    <div class="w-20 h-20 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-6">
+                        <iconify-icon icon="mdi:customize" style="color: #0056b3; font-size: 40px;"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Custom Solutions</h3>
+                    <p class="text-gray-600">We tailor each shredder to your specific material type, volume requirements, and production environment.</p>
+                </div>
+                
+                <!-- 优势3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md product-card text-center">
+                    <div class="w-20 h-20 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-6">
+                        <iconify-icon icon="mdi:shield-check" style="color: #0056b3; font-size: 40px;"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Global Support</h3>
+                    <p class="text-gray-600">24/7 technical support, spare parts availability, and installation teams in 30+ countries worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色产品 -->
+    <section class="section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Top Products</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our range of high-performance shredders designed for various materials and industries.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- 产品1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg product-card">
+                    <div class="h-48 bg-gray-300 flex items-center justify-center">
+                        <iconify-icon icon="mdi:recycle" style="color: #666; font-size: 80px;"></iconify-icon>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Plastic Shredder Series</h3>
+                        <p class="text-gray-600 mb-4">Heavy-duty shredders for plastic bottles, films, pipes, and other plastic waste. Output: 500-5000 kg/h.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-blue-700">From $12,500</span>
+                            <a href="/products.html" class="text-blue-700 font-medium hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 产品2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg product-card">
+                    <div class="h-48 bg-gray-300 flex items-center justify-center">
+                        <iconify-icon icon="mdi:cube" style="color: #666; font-size: 80px;"></iconify-icon>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Metal Crusher Series</h3>
+                        <p class="text-gray-600 mb-4">Powerful crushers for scrap metal, aluminum cans, steel drums, and wire. Output: 1-10 tons/h.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-blue-700">From $28,000</span>
+                            <a href="/products.html" class="text-blue-700 font-medium hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 产品3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg product-card">
+                    <div class="h-48 bg-gray-300 flex items-center justify-center">
+                        <iconify-icon icon="mdi:tree" style="color: #666; font-size: 80px;"></iconify-icon>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Wood Chipper Series</h3>
+                        <p class="text-gray-600 mb-4">Industrial chippers for pallets, logs, branches, and wood waste. Output: 2-20 m³/h.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-blue-700">From $15,800</span>
+                            <a href="/products.html" class="text-blue-700 font-medium hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="/products.html" class="btn-primary inline-flex items-center">
+                    View All Products <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 询盘表单 -->
+    <section class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <!-- 左侧 -->
+                    <div class="md:w-2/5 gradient-bg text-white p-8">
+                        <h3 class="text-2xl font-bold mb-4">Get Your Free Consultation</h3>
+                        <p class="mb-6">Our experts will analyze your requirements and recommend the best shredding solution for your business.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-300 mr-3"></i>
+                                <span>Free equipment recommendation</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-300 mr-3"></i>
+                                <span>Detailed quotation within 24h</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-300 mr-3"></i>
+                                <span>Technical support & installation</span>
+                            </div>
+                        </div>
+                        <div class="mt-8 pt-8 border-t border-blue-400">
+                            <h4 class="font-bold mb-2">Contact Info</h4>
+                            <p class="mb-1"><i class="fas fa-phone-alt mr-2"></i> +86 13223066292</p>
+                            <p class="mb-1"><i class="fas fa-envelope mr-2"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e99a858c998681a98e84888085c78a8684">[email&#160;protected]</a></p>
+                            <p><i class="fas fa-map-marker-alt mr-2"></i> Industrial Zone, Shanghai, China</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 右侧表单 -->
+                    <div class="md:w-3/5 p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-gray-800">Send Inquiry</h3>
+                        <form id="inquiryForm" class="contact-form">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-gray-700 mb-2">Full Name *</label>
+                                    <input type="text" name="name" placeholder="John Smith" required>
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 mb-2">Company Name *</label>
+                                    <input type="text" name="company" placeholder="Your Company" required>
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 mb-2">Email Address *</label>
+                                    <input type="email" name="email" placeholder="john@company.com" required>
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 mb-2">Phone Number *</label>
+                                    <input type="tel" name="phone" placeholder="+1 234 567 8900" required>
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 mb-2">Country *</label>
+                                    <select name="country" required>
+                                        <option value="">Select Country</option>
+                                        <option value="usa">United States</option>
+                                        <option value="uk">United Kingdom</option>
+                                        <option value="uae">United Arab Emirates</option>
+                                        <option value="nigeria">Nigeria</option>
+                                        <option value="india">India</option>
+                                        <option value="germany">Germany</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 mb-2">Material Type *</label>
+                                    <select name="material" required>
+                                        <option value="">Select Material</option>
+                                        <option value="plastic">Plastic</option>
+                                        <option value="metal">Metal</option>
+                                        <option value="wood">Wood</option>
+                                        <option value="paper">Paper/Cardboard</option>
+                                        <option value="ewaste">E-Waste</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <label class="block text-gray-700 mb-2">Your Requirements *</label>
+                                <textarea name="requirements" rows="4" placeholder="Please describe your shredding needs, capacity requirements, and any other details..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary w-full">
+                                <i class="fas fa-paper-plane mr-2"></i> Submit Inquiry
+                            </button>
+                            <p class="text-gray-500 text-sm mt-4">By submitting this form, you agree to our Privacy Policy. We'll contact you within 24 hours.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- 公司信息 -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <iconify-icon icon="mdi:factory" style="color: #fff; font-size: 28px;"></iconify-icon>
+                        <div class="ml-3">
+                            <h2 class="text-xl font-bold">Power<span class="text-blue-400">Shred</span></h2>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">Leading manufacturer of industrial shredders and crushers since 2008. Global solutions for recycling and waste management.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://facebook.com" class="text-gray-400 hover:text-white" target="_blank" rel="noopener">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com" class="text-gray-400 hover:text-white" target="_blank" rel="noopener">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="text-gray-400 hover:text-white" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://youtube.com" class="text-gray-400 hover:text-white" target="_blank" rel="noopener">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/8613223066292" class="text-gray-400 hover:text-green-400" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 快速链接 -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="/about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="/products.html" class="text-gray-400 hover:text-white transition">Products</a></li>
+                        <li><a href="/contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Brochure Download</a></li>
+                    </ul>
+                </div>
+                
+                <!-- 产品分类 -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Our Products</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/products.html#plastic" class="text-gray-400 hover:text-white transition">Plastic Shredders</a></li>
+                        <li><a href="/products.html#metal" class="text-gray-400 hover:text-white transition">Metal Crushers</a></li>
+                        <li><a href="/products.html#wood" class="text-gray-400 hover:text-white transition">Wood Chippers</a></li>
+                        <li><a href="/products.html#paper" class="text-gray-400 hover:text-white transition">Paper Shredders</a></li>
+                        <li><a href="/products.html#ewaste" class="text-gray-400 hover:text-white transition">E-Waste Shredders</a></li>
+                    </ul>
+                </div>
+                
+                <!-- 联系信息 -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Contact Us</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-400 mt-1 mr-3"></i>
+                            <span class="text-gray-400">Industrial Zone, No. 123, Shanghai, China 200000</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-blue-400 mr-3"></i>
+                            <span class="text-gray-400">+86 13223066292</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-blue-400 mr-3"></i>
+                            <span class="text-gray-400"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="40332c25302f2800272d21292c6e232f2d">[email&#160;protected]</a></span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp text-green-400 mr-3"></i>
+                            <span class="text-gray-400">+86 13223066292</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2023 PowerShred Industrial Equipment Co., Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 成功提交模态框 -->
+    <div id="successModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-lg max-w-md w-full p-8 text-center">
+            <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-6">
+                <i class="fas fa-check text-green-600 text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Thank You!</h3>
+            <p class="text-gray-600 mb-6">Your inquiry has been submitted successfully. Our sales team will contact you within 24 hours.</p>
+            <button id="closeModal" class="btn-primary">OK</button>
+        </div>
+    </div>
+
+    <!-- WhatsApp 浮动按钮 -->
+    <a href="https://wa.me/8613223066292" target="_blank" rel="noopener" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition z-40">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- 加载JS -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/assets/js/main.js"></script>
+</body>
+</html>
