@@ -1728,6 +1728,14 @@
           "description": "APP Store - 为 FNOS 生态打造的第三方中心化应用仓库，自动收录和更新丰富第三方应用包，清晰检索，便捷下载。",
           "icon": "/assets/favicon_1776859457187.png",
           "enabled": true
+        },
+        {
+          "id": "site_1776859628522_5sorjg69a",
+          "title": "Cloudflare Workers/Pages 请求数使用统计",
+          "href": "https://tongji.yormb.cn/",
+          "description": "",
+          "icon": "/assets/favicon_1776859625152.svg",
+          "enabled": true
         }
       ],
       "subCategories": [
