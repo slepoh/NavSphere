@@ -1295,6 +1295,14 @@
               "description": "",
               "icon": "https://www.google.com/s2/favicons?sz=128&domain=wxplus.yormb.cn",
               "enabled": true
+            },
+            {
+              "id": "site_1776858846021_f7nhrphr4",
+              "title": "登录 - 云盘",
+              "href": "https://pan.yormb.cn/",
+              "description": "",
+              "icon": "https://www.google.com/s2/favicons?sz=128&domain=pan.yormb.cn",
+              "enabled": true
             }
           ],
           "enabled": true
