@@ -444,6 +444,14 @@
           "description": "国内站点",
           "enabled": true,
           "items": []
+        },
+        {
+          "id": "2ade449d-a20c-43ed-935f-4ea9aa2f7e15",
+          "title": "国际",
+          "icon": "BookOpen",
+          "description": "",
+          "enabled": true,
+          "items": []
         }
       ]
     },
