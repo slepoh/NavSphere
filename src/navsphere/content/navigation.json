@@ -1688,7 +1688,16 @@
       "icon": "Code",
       "description": "",
       "enabled": true,
-      "items": [],
+      "items": [
+        {
+          "id": "site_1776859463468_u7o0noxbq",
+          "title": "APP Store - FNOS 第三方应用仓库",
+          "href": "https://fnos.yormb.cn/",
+          "description": "APP Store - 为 FNOS 生态打造的第三方中心化应用仓库，自动收录和更新丰富第三方应用包，清晰检索，便捷下载。",
+          "icon": "/assets/favicon_1776859457187.png",
+          "enabled": true
+        }
+      ],
       "subCategories": [
         {
           "id": "c58e0eb7-8d56-46cc-a00e-841e07500066",
