@@ -1369,6 +1369,14 @@
               "description": "矢量图形和插图。",
               "icon": "/assets/images/logos/Illustrator.webp",
               "enabled": true
+            },
+            {
+              "id": "site_1776859154555_gezwneisn",
+              "title": "共享图床",
+              "href": "https://img.yormb.cn/",
+              "description": "Sanyue ImgHub - A modern file hosting platform",
+              "icon": "/assets/favicon_1776859132111.png",
+              "enabled": true
             }
           ],
           "enabled": true
