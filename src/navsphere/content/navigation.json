@@ -1319,6 +1319,14 @@
               "description": "",
               "icon": "/assets/favicon_1776858920331.ico",
               "enabled": true
+            },
+            {
+              "id": "site_1776859041687_gmiu6y1b5",
+              "title": "订阅管理系统",
+              "href": "https://sub.yormb.cn/",
+              "description": "",
+              "icon": "https://www.google.com/s2/favicons?sz=128&domain=sub.yormb.cn",
+              "enabled": true
             }
           ],
           "enabled": true
