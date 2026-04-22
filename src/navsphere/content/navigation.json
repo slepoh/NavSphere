@@ -1263,6 +1263,14 @@
               "description": "App Screenshot Generator for App Store&Google Play,Create panoramic screenshots for iOS and Android apps. No account needed.",
               "icon": "/assets/img_1735258064656.webp",
               "enabled": true
+            },
+            {
+              "id": "site_1776858346931_66tqzhooe",
+              "title": "网盘搜索 · PanHub",
+              "href": "https://panhub.yormb.cn",
+              "description": "聚合阿里云盘、夸克、百度网盘、115、迅雷等平台，实时检索各类分享链接与资源，免费、快速、无广告。",
+              "icon": "/assets/favicon_1776858321463.ico",
+              "enabled": true
             }
           ],
           "enabled": true
