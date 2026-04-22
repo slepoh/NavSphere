@@ -1399,6 +1399,14 @@
               "description": "",
               "icon": "https://www.google.com/s2/favicons?sz=128&domain=cfbp.yormb.cn",
               "enabled": true
+            },
+            {
+              "id": "site_1776859604525_24oe8cypa",
+              "title": "在线订阅转换 - 现代化的代理订阅转换工具",
+              "href": "https://cfsub.yormb.cn/",
+              "description": "",
+              "icon": "/assets/favicon_1776859597217.ico",
+              "enabled": true
             }
           ],
           "enabled": true
