@@ -1407,6 +1407,14 @@
               "description": "",
               "icon": "/assets/favicon_1776859597217.ico",
               "enabled": true
+            },
+            {
+              "id": "site_1777877688467_incf0wxd4",
+              "title": "Check ProxyIP",
+              "href": "https://check.proxyip.yormb.cn/",
+              "description": "",
+              "icon": "https://www.google.com/s2/favicons?sz=128&domain=check.proxyip.yormb.cn",
+              "enabled": true
             }
           ],
           "enabled": true
