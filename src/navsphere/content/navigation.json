@@ -1415,6 +1415,14 @@
               "description": "",
               "icon": "https://www.google.com/s2/favicons?sz=128&domain=check.proxyip.yormb.cn",
               "enabled": true
+            },
+            {
+              "id": "site_1777877962269_wzedz8v4d",
+              "title": "免费邮箱",
+              "href": "https://mail.yormb.cn/",
+              "description": "",
+              "icon": "/assets/favicon_1777877931404.png",
+              "enabled": true
             }
           ],
           "enabled": true
